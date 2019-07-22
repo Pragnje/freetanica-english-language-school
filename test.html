@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="English,Free,Freetanica,Learn,Test">
+    <meta name="author" content="FrontEnd">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="master.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo_tab.png">
+    <script src="main.js"></script>
+</head>
+<body id="test_bg">
+    <header>
+      <div class="fixed-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+              <img src="img/logo.png" alt="logo" class="d-inline-block align-top" id="logo">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item m-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item m-auto">
+                    <a class="nav-link" href="test.html">Test</a>
+                  </li>
+                  <li class="nav-item m-auto">
+                    <a class="nav-link" href="links.html">Links</a>
+                  </li>
+                  <li class="nav-item m-auto">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item m-auto">
+                  <a class="nav-link" href="kontakt.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+      </div>
+  </header>
+
+
+    <main>
+        <!--Ovde bi Dragan trebao da ubaci test-->
+        <div id="container">
+          <a href="#" id="start">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Start Test!
+          </a>
+            <div id="test" style="display: none">
+              <div id="question"></div>
+              <div id="choices">
+                  <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                  <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                  <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+              </div>
+              <div id="timer">
+                  <div id="counter"></div>
+                  <div id="btimeGauge"></div>
+                  <div id="timeGauge"></div>
+              </div>
+              <div id="progress"></div>
+          </div>
+          <div id="scoreContainer"></div>
+        </div>
+        <div id="reset-test" class="mt-4">
+            <button onclick="resetPage()" class="btn button2 pt-2 pb-2 pl-5 pr-5">Reset Test</button>
+        </div>
+    </main>
+    
+
+    <footer class="page-footer font-small light pt-3 pb-3 mt-5">
+        <div class="container text-center text-sm-left">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <img src="img/logo.png" alt="logo">
+                      <p>Learn English For Free.</p>
+                      <p>Test Yourself For Free.</p>
+                      <p>Get Certificate For Free.</p>
+                </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center ">
+            <h5 class="text-center">Links</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="test.html">Test</a>
+                </li>
+                <li>
+                    <a href="links.html">Links</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About US</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h5>How to contact us</h5>
+                <div class="social-container text-center">
+                    <ul class="icons">
+                        <li><a href="404.html"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="404.html"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="404.html"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="404.html"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h5>How to find us?</h5>
+                        <div class="text-center">
+                            <iframe src="https://maps.google.com/maps?q=dr%20kornela%20radulovica%2016%20zrenjanin&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="test.js"></script>
+</body>
+</html>
